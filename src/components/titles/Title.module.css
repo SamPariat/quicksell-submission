@@ -1,0 +1,38 @@
+.box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+
+.box > div {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.header {
+  margin: 0 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.itemcount {
+  margin-left: 5px;
+  font-size: 14px;
+  color: var(--subtext);
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.icon {
+  margin: 0 4px;
+  color: var(--dark-grey);
+  cursor: pointer;
+}

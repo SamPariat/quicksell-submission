@@ -1,0 +1,12 @@
+.settings_menu {
+  border: none;
+  box-shadow: inset 0px 0px 1px 1px var(--grey);
+  background-color: var(--bg-grey);
+  width: fit-content;
+  border-radius: 8px;
+  padding: 10px 5px;
+  position: absolute;
+  left: 40px;
+  top: 50px;
+  z-index: 100;
+}

@@ -1,0 +1,20 @@
+:root {
+  font-family: 'Inter', sans-serif;
+  --white: #ffffff;
+  --grey: #c9c9c9;
+  --subtext: #9b9b9b;
+  --bg-grey: #f8f8fa;
+  --dark-grey: #717173;
+  --app-bg-color: #f5f4f8;
+  --tag-color: #6b6e77;
+  --tag-border: #ededed;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--app-bg-color);
+}

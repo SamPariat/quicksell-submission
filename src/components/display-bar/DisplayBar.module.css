@@ -1,0 +1,25 @@
+.main_display_nav {
+  display: flex;
+  flex-grow: 1;
+  background-color: var(--white);
+  padding: 20px 40px;
+  position: relative;
+}
+
+.display_button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  justify-content: space-between;
+  background-color: var(--white);
+  border: none;
+  border-radius: 2px;
+  box-shadow: inset 0px 0px 1px 1px var(--grey);
+}
+
+.display_button span {
+  margin: 0 5px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}

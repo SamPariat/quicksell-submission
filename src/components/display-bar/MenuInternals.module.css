@@ -1,0 +1,28 @@
+.menu_internals {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu_internals p {
+  font-size: 14px;
+  margin-right: 80px;
+  font-weight: 500;
+  color: var(--subtext);
+}
+
+.menu_internals select {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  justify-content: space-around;
+  background-color: var(--white);
+  border: none;
+  border-radius: 2px;
+  box-shadow: inset 0px 0px 1px 1px var(--grey);
+  width: 100px;
+  font-family: 'Inter', sans-serif;
+}

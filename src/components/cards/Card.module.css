@@ -1,0 +1,28 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  padding: 16px 8px;
+  border-radius: 8px;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.id {
+  color: var(--grey);
+  font-size: 14px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.tag {
+  font-weight: 500;
+  border: 1px solid var(--tag-border);
+  border-radius: 4px;
+  color: var(--tag-color);
+  padding: 2px;
+  font-size: 12px;
+}

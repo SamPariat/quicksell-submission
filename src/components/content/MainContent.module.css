@@ -1,0 +1,19 @@
+.main_content {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  column-gap: 20px;
+  row-gap: 10px;
+  padding: 0 2.5%;
+}
+
+.loading {
+  display: flex;
+  flex-grow: 1;
+  margin: auto;
+}
+
+@media only screen and (max-width: 992px) {
+  .main_content {
+    grid-template-columns: repeat(3, auto);
+  }
+}
