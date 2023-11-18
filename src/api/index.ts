@@ -5,9 +5,11 @@ import axios, {
 
 import { type QuicksellApi } from '../types';
 
+console.log(import.meta.env.VITE_QUICKSELL_API_URL)
+
 const api = axios.create({
   baseURL:
-    import.meta.env.QUICKSELL_API_URL ?? '',
+    import.meta.env.VITE_QUICKSELL_API_URL ?? '',
 });
 
 const request = (
