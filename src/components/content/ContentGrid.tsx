@@ -24,6 +24,8 @@ export default function ContentGrid({
           id={ticket.id}
           tag={ticket.tag[0]}
           title={ticket.title}
+          userId={ticket.userId}
+          status={ticket.status}
         />
       ))}
     </div>

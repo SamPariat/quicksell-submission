@@ -25,4 +25,28 @@
   color: var(--tag-color);
   padding: 2px;
   font-size: 12px;
+  margin-left: 5px;
+}
+
+.first {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.last {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.last_icon {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+  border: 1px solid var(--tag-border);
 }

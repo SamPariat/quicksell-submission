@@ -1,0 +1,28 @@
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: var(--grey);
+  border-radius: 100%;
+  position: absolute;
+}
+
+.active_circle {
+  position: relative;
+  right: -17px;
+  bottom: -15px;
+  border-radius: 100%;
+  width: 8px;
+  height: 8px;
+  z-index: 80;
+}
+
+.container {
+  width: 20px;
+  margin-right: 10px;
+}

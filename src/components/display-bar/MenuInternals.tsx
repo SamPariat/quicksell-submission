@@ -14,7 +14,11 @@ export default function MenuInternals({
   text,
   options,
 }: MenuInternalsProps) {
-  const { setTickets } = useApiStore();
+  const {
+    setTickets,
+    groupSetting,
+    orderSetting,
+  } = useApiStore();
 
   const handleOptionChange = (
     event: React.ChangeEvent<HTMLSelectElement>
@@ -22,11 +26,11 @@ export default function MenuInternals({
     if (text == 'Grouping') {
       setTickets(
         event.target.value as Grouping,
-        'Title'
+        orderSetting
       );
     } else {
       setTickets(
-        'Status',
+        groupSetting,
         event.target.value as Ordering
       );
     }
@@ -37,6 +41,11 @@ export default function MenuInternals({
       <p>{text}</p>
       <select
         name='selected-option'
+        value={
+          text === 'Grouping'
+            ? groupSetting
+            : orderSetting
+        }
         onChange={handleOptionChange}
       >
         {options.map((option) => (

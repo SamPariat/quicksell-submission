@@ -3,19 +3,39 @@ import {
   type Grouping,
 } from '../types';
 
+const statuses = [
+  'Todo',
+  'In progress',
+  'Backlog',
+  'Cancelled',
+  'Done',
+];
+
 const groupByStatus = (
   tickets: Ticket[]
-): Record<string, Ticket[]> =>
-  tickets.reduce((accumulate, ticket) => {
-    const { status } = ticket;
+): Record<string, Ticket[]> => {
+  const result = tickets.reduce(
+    (accumulate, ticket) => {
+      const { status } = ticket;
 
-    if (accumulate[status] === undefined) {
-      accumulate[status] = [];
+      if (accumulate[status] === undefined) {
+        accumulate[status] = [];
+      }
+      accumulate[status].push(ticket);
+
+      return accumulate;
+    },
+    {} as Record<string, Ticket[]>
+  );
+
+  for (const status of statuses) {
+    if (result[status] === undefined) {
+      result[status] = [];
     }
-    accumulate[status].push(ticket);
+  }
 
-    return accumulate;
-  }, {} as Record<string, Ticket[]>);
+  return result;
+};
 
 const groupByUser = (tickets: Ticket[]) =>
   tickets.reduce((accumulate, ticket) => {

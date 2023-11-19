@@ -13,11 +13,11 @@ export const fetchData = async () => {
 
     const grouping: Grouping =
       (localStorage.getItem(
-        'grouping'
+        'groupsetting'
       ) as Grouping) ?? 'Status';
     const ordering: Ordering =
       (localStorage.getItem(
-        'ordering'
+        'ordersetting'
       ) as Ordering) ?? 'Priority';
 
     const sortedAndOrderedTickets =
@@ -31,6 +31,8 @@ export const fetchData = async () => {
       userActivity: userActivityRecord,
       apiResults: result,
     });
+
+    return result;
   } catch (e) {
     throw e;
   }

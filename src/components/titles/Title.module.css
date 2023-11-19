@@ -6,7 +6,7 @@
   padding: 30px 20px;
 }
 
-.box > div {
+.title {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
@@ -35,4 +35,5 @@
   margin: 0 4px;
   color: var(--dark-grey);
   cursor: pointer;
+  top: -5px;
 }
